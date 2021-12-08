@@ -1,0 +1,10 @@
+django-admin sartproject MyBlog (create project MyBlog)
+python manage.py startapp blog (create application folder)
+.\manage.py runserver 5000 (start local server)
+.\manage.py migrate (apply migrations)
+
+
+
+
+
+2. Уроки Django 2 - Роутинг запросов (2018)

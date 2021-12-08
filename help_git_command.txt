@@ -1,0 +1,38 @@
+git init (вызов команды из корня, создает ожидание для добавления в репозиторий)
+git add . (добавляет файлы в ожидаемый репозиторий)
+
+git add css\main.css (добавление из папки)
+git add css (добавление папки)
+git add *.html (добаление файлов только с html расширением)
+git add css\**\*.html (добаление файлов только с html расширением из всех папок находящихся в css)
+git add !index.html (добавить всё кроме index.html)
+
+# создав файл .gitignore можно добавить в него все что не надо добавлять в хранилище. Применины команды от git add
+
+git status (статус файлов)
+git rm --cached <file>... (delete file from expectation status)
+git commit -m (создание commita добавление файлов в локальное хранилище, -m для комментария)
+# далее если изменить какой либо файл и вызвать git status нам сообщат об изменении файла
+# для сохранения изменений в Git надо снова добавить этот файл в ожидание git add и закомитить его git commit
+git log (нформация об изменениях)
+git log --oneline (лог в сжатом виде)
+
+git chekout <id коммита взять в логе> (просмотр изменений, в редакторе отобразится содиржимое файла из прошлого)
+git checkout master (возврат последних изменений)
+git revert <id коммита взять в логе> (отменяет изменения выбранного комита)
+git reset <id коммита взять в логе> (удаляет все комиты после указанного, без отката изменений)
+git reset <id коммита взять в логе> hard (удаляет все комиты после указанного, c откатом изменений)
+
+git branch <name> (создание ветки)
+git checkout <name> (переход на ветку)
+git checkout -b <name> (создание и переход на созданную ветку)
+git branch -a (посмотреть все ветки)
+git merge <name> (объединение какой либо ветки с основной, для этого необходимо находится на основной ветке master.
+                  Объединенная ветка не удаляется.)
+
+git remote add origin https://github.com/Hobbit-1987/Site_training.git (connect repository)
+git remote (check connection)
+git push -u origin master (add files on repository with branch master)
+
+
+       
