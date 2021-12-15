@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
-def posts_lists(request):
-    return HttpResponse('<h1>Meow meow Cat</h1>')
+def posts_list(request):
+    f = ['bonBon', 'cat', 'parrot', 'bird']
+    return render(request, 'blog/index.html', context={'names': f})
