@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
 
-from .views import hallo # point denote the module is located in folder with urls.py
+#from .views import hallo, meow # point denote the module is located in folder with urls.py
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', hallo) # my new path
+    path('blog/', include('blog.urls')), # request on adress 'blog' will  execute function 'hello'
 ]
